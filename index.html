@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -17,16 +17,20 @@
       <nav>
         <ul class="nav-links">
           <li>
-            <a href="#"><i class="fas fa-home"></i> HOME</a>
+            <a href="./index.html"><i class="fas fa-user"></i> HOME</a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-user"></i> ABOUT</a>
+            <a href="#about-section"><i class="fas fa-user"></i> ABOUT</a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-briefcase"></i> PORTFOLIO</a>
+            <a href="#portfolio-section"
+              ><i class="fas fa-briefcase"></i> PORTFOLIO</a
+            >
           </li>
           <li>
-            <a href="#"><i class="fas fa-envelope"></i> CONTACT</a>
+            <a href="#contact-section"
+              ><i class="fas fa-envelope"></i> CONTACT</a
+            >
           </li>
         </ul>
       </nav>
@@ -40,7 +44,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section id="about-section" class="about">
       <h2>ABOUT ME</h2>
       <p class="subheading">I love photography</p>
       <p>
@@ -67,69 +71,122 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills">
-      <h2>I'm really good at:</h2>
-      <div class="skill-bar">
-        <p><i class="fas fa-camera"></i> Photography</p>
-        <div class="progress">
-          <div class="progress-bar" style="width: 90%">90%</div>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <h2>MY WORK</h2>
+      <p>
+        Here are some of my latest lorem work ipsum tipsum.<br />Click on the
+        images to make them bigger
+      </p>
+
+      <div class="grid-container">
+        <div class="grid-item">
+          <img
+            src="https://images.pexels.com/photos/45222/forest-fog-nature-winter-45222.jpeg?cs=srgb&dl=pexels-pixabay-45222.jpg&fm=jpg"
+            alt="Work Image 1"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?cs=srgb&dl=pexels-igor-haritanovich-814387-1695052.jpg&fm=jpg"
+            alt="Work Image 2"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-Alaska%28cropped%29.jpg"
+            alt="Work Image 3"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://images.unsplash.com/photo-1519821172144-4f87d85de2a1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Work Image 4"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi24lVXT0zYQy_WEdHVPvPIYDGrFkWtR0DKA&s"
+            alt="Work Image 5"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://media.istockphoto.com/id/171144494/photo/moody-film-noir-shot-of-vintage-typewriter-and-blank-paper.jpg?s=612x612&w=0&k=20&c=uLoYY367HcMD_XR6umNp8vuoDWXpPbcZgCCXgS8NOpc="
+            alt="Work Image 6"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/19/fd/42/fa/old-photo-of-the-railway.jpg"
+            alt="Work Image 7"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuTmD3Gf6wDqrjhWqMerLEyF47FCahvKE77PxuJRf2c9v8vVc5h3EHJtgK7HkxjZHzRa8&usqp=CAU"
+            alt="Work Image 8"
+          />
         </div>
       </div>
-      <div class="skill-bar">
-        <p><i class="fas fa-desktop"></i> Web Design</p>
-        <div class="progress">
-          <div class="progress-bar" style="width: 85%">85%</div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <p><i class="fas fa-image"></i> Photoshop</p>
-        <div class="progress">
-          <div class="progress-bar" style="width: 75%">75%</div>
-        </div>
-      </div>
+
+      <button class="load-more">Load More</button>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
-      <div class="stat">
-        <p>14+</p>
-        <p>Partners</p>
-      </div>
-      <div class="stat">
-        <p>55+</p>
-        <p>Projects Done</p>
-      </div>
-      <div class="stat">
-        <p>89+</p>
-        <p>Happy Clients</p>
-      </div>
-      <div class="stat">
-        <p>150+</p>
-        <p>Meetings</p>
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact">
+      <div>
+        <p>CONTACT</p>
       </div>
     </section>
 
     <section>
-      <div class="port">
-        <div class="text">
-          <p class="portfolio">PORTFOLIO</p>
+      <div class="contact-section">
+        <h1>WHERE I WORK</h1>
+        <p>I'd love your feedback!</p>
+        <div class="contact-content">
+          <div class="location">
+            <img
+              src="https://cdn.britannica.com/37/245037-050-79129D52/world-map-continents-oceans.jpg"
+              alt="Location Map"
+            />
+          </div>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
+            <p><i class="fas fa-phone"></i> Phone: +00 151515</p>
+            <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
+          </div>
         </div>
+        <p>Swing by for a cup of <span>☕</span>, or leave me a note:</p>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
       </div>
-    </section>
-    <section>
-      <div class="work-class">
-        <p class="work">MY WORK</p>
-        <p class="">
-          Here are some of my latest lorem work ipsum tipsum.
-          <br />
-          Click on the images to make then bigger
-        </p>
-      </div>
-      
     </section>
 
-    <!-- JavaScript for Navbar Scroll Effect -->
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="to-top">
+          <a href="./index.html">To the top</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="powered">
+          <p>Powered by V&S Creation!!😎</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Navbar Scroll Effect and Smooth Scrolling -->
     <script>
       window.addEventListener("scroll", function () {
         const header = document.getElementById("header");
@@ -138,6 +195,16 @@
         } else {
           header.classList.remove("scrolled");
         }
+      });
+
+      // Smooth scroll effect for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
       });
     </script>
   </body>
